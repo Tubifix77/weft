@@ -1,0 +1,5 @@
+r0 lit.i 7
+r1 i2f r0
+r2 lit.f 2.0
+r3 div r1 r2
+_ out r3

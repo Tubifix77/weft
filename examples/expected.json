@@ -1,0 +1,62 @@
+{
+  "arith.we": {
+    "exit": 0,
+    "stdout": [
+      "16"
+    ]
+  },
+  "max.we": {
+    "exit": 0,
+    "stdout": [
+      "7"
+    ]
+  },
+  "vector.we": {
+    "exit": 0,
+    "stdout": [
+      "3",
+      "20"
+    ]
+  },
+  "guard.we": {
+    "exit": 0,
+    "stdout": [
+      "5"
+    ]
+  },
+  "float-logic.we": {
+    "exit": 0,
+    "stdout": [
+      "3.5"
+    ]
+  },
+  "logic.we": {
+    "exit": 0,
+    "stdout": [
+      "true"
+    ]
+  },
+  "error-divzero.we": {
+    "exit": 1,
+    "stdout": [],
+    "error": {
+      "code": "DIV_ZERO",
+      "op_index": 2,
+      "operands": [
+        "r0",
+        "r1"
+      ]
+    }
+  },
+  "error-chk.we": {
+    "exit": 1,
+    "stdout": [],
+    "error": {
+      "code": "CHK_FAIL",
+      "op_index": 4,
+      "operands": [
+        "DIVISOR_ZERO"
+      ]
+    }
+  }
+}

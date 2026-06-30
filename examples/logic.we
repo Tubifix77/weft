@@ -1,0 +1,6 @@
+r0 lit.b true
+r1 lit.b false
+r2 or r0 r1
+r3 not r1
+r4 and r2 r3
+_ out r4

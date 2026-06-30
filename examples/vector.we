@@ -1,0 +1,9 @@
+r0 lit.i 10
+r1 lit.i 20
+r2 lit.i 30
+r3 vec r0 r1 r2
+r4 len r3
+_ out r4
+r5 lit.i 1
+r6 idx r3 r5
+_ out r6

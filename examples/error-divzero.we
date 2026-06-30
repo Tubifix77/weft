@@ -1,0 +1,4 @@
+r0 lit.i 10
+r1 lit.i 0
+r2 div r0 r1
+_ out r2

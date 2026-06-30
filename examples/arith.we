@@ -1,0 +1,6 @@
+r0 lit.i 5
+r1 lit.i 3
+r2 add r0 r1
+r3 lit.i 2
+r4 mul r2 r3
+_ out r4

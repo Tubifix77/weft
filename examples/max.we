@@ -1,0 +1,5 @@
+r0 lit.i 7
+r1 lit.i 4
+r2 gt r0 r1
+r3 sel r2 r0 r1
+_ out r3
