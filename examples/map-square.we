@@ -1,0 +1,9 @@
+r0 lit.i 1
+r1 lit.i 2
+r2 lit.i 3
+r3 vec r0 r1 r2
+r4 fn 1
+r0 mul a0 a0
+_ ret r0
+r5 map r3 r4
+_ out r5

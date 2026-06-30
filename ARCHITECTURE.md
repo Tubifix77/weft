@@ -217,7 +217,7 @@ The decision is therefore a deployment choice, recorded here so it is made delib
 ## 12. Open questions
 
 1. **Spec layer (§8)** is design intent, not a built mechanism. It is the highest-value next prototype.
-2. **Sub-stream semantics** for `map`/`fold` need a precise closure rule for which outer handles a sub-stream may capture (proposal: explicit capture list, same backward-only rule).
+2. **Sub-stream semantics** for `map`/`fold` — RESOLVED. Fully specified in `ITERATION.md`: flat `fn`/`ret` closures, one level deep (no nested sub-streams), an explicit capture list, backward-only references inside the body. No longer open.
 3. **Constraint-state cost.** Type-tracking in the decoder mask is more grammar state than handle-tracking alone; the boundary between "rejected at sampling" and "raised before execution" needs measuring on a real tokenizer.
 4. **Tokenizer fit.** The opcode mnemonics are chosen to be single tokens *in principle*; this must be verified against the specific tokenizer of whatever model writes Weft, because the whole token-economy claim depends on it.
 5. **Name.** "Weft" is a placeholder.

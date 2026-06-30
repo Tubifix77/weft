@@ -58,5 +58,23 @@
         "DIVISOR_ZERO"
       ]
     }
+  },
+  "map-square.we": {
+    "exit": 0,
+    "stdout": [
+      "[1, 4, 9]"
+    ]
+  },
+  "fold-sum.we": {
+    "exit": 0,
+    "stdout": [
+      "6"
+    ]
+  },
+  "map-capture.we": {
+    "exit": 0,
+    "stdout": [
+      "[50, 100]"
+    ]
   }
 }

@@ -25,7 +25,7 @@ Rationale: compiles to a single static binary with no runtime dependency (the di
 
 ## 2. Scope of v0 — the core subset
 
-Implement every opcode in `ARCHITECTURE.md` §5 **except** `map` / `fold` (the combinators). Those depend on sub-stream syntax, which is an unresolved open question (`ARCHITECTURE.md` §12.2, the capture rule). Building them now would mean inventing that syntax under pressure — defer it.
+Implement every opcode in `ARCHITECTURE.md` §5 **except** `map` / `fold` (the combinators). Their sub-stream syntax is now specified in `ITERATION.md`; `map`/`fold` are **v1**, built after the v0 core is green. v0 itself stays the core subset so the first runnable interpreter is small.
 
 **v0 opcodes:** `lit.i` `lit.f` `lit.b` `lit.s`, `add` `sub` `mul` `div` `mod`, `eq` `ne` `lt` `le` `gt` `ge`, `and` `or` `not`, `sel`, `vec` `len` `idx`, `i2f`, `chk`, `out`.
 
@@ -220,6 +220,6 @@ Each step ends green (`go build` + the relevant golden tests pass) before the ne
 
 ## 13. Explicitly out of scope for this build
 
-- `map` / `fold` / `scan` and sub-stream syntax — blocked on `ARCHITECTURE.md` §12.2 (capture rule). Revisit only after that decision.
+- `scan` and nested iteration — not yet specified. (`map` / `fold` and sub-stream syntax ARE now specified in `ITERATION.md` and are **v1**, built after the v0 core below — no longer deferred.)
 - The constrained decoder (`ARCHITECTURE.md` §7 stage 1) — separate project; it makes *generation* safe and runs against this interpreter. Not part of v0.
 - Performance work. v0 is correct-first; a Rust rewrite or a bytecode pass is a later, separate effort.
