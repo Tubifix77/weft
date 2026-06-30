@@ -1,0 +1,9 @@
+# Compiled binaries — regenerable with `go build`; distributed via GitHub releases, not committed
+/weft
+/weft.exe
+/weft-*
+
+# Go build / test artifacts
+*.exe
+*.test
+*.out
